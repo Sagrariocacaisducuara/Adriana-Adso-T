@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&family=Mulish:ital,wght@0,300;0,400;1,200&family=Oswald:wght@200;600;700&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&family=Mulish:ital,wght@0,300;0,400;1,200&family=Oswald:wght@200;600;700&family=Roboto:wght@100&family=Victor+Mono:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: rgb(237, 233, 233);
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+}
+/*------------
+estilo Encabezado
+------------*/
+
+.logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+
+header{
+    background-image: linear-gradient(to right,#8d93eb, #c680ffbe);
+    width: 100%; 
+    height: 150px;
+    box-sizing: border-box;
+}
+/*------------
+estilo Contenido
+------------*/
+.contenido{
+     padding: 70px 140px 60px 140px;
+     display: flex;
+     justify-content: center;
+}
+
+
+
+
+/*------------
+Estilo Entradas Basicas
+------------*/
+
+
+
+.form-validacion .entrada {
+    text-align: left;
+    margin-bottom: 22px;
+}
+.titulo {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #0786ee;
+    font-size: 24px;
+    padding: 0 10px 15px;
+    border-bottom: 2px solid rgb(91, 91, 245);
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.form-validacion label {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #5F5F5F;
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+.form-validacion input[type=checkbox] {
+    margin-top: 13px;
+}
+.form-validacion input[type=text]{
+    color: #ac2929;
+    box-sizing: border-box;
+    width: 240px;
+   padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.form-validacion input[type=button] {
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(19, 19, 59);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+.form-validacion {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: #b7afaf;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+
+ .form-validacion input[type=text],
+ .form-validacion  input[type=email]{
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    padding: 12px;
+    border-radius: 3px;
+
+}
+  .campo:valid + .icon  {
+    color: green;
+  }
+  .campo:invalid + .icon {
+    color: rgb(227, 14, 14);
+  }
+
+.form-validacion input[type=radio],
+.form-validacion input[type=checkbox] {
+    box-shadow: none;
+    width: auto;
+}
+
+.form-validacion input[type=checkbox] {
+    margin-top: 13px;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: row; 
+    padding: 10px;
+}
+
+
+.opciones label {
+    margin-right: 0; 
+    
+}
+.form-validacion input[type=submit] {
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(104, 104, 243);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 10px 200px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+
+.formulario .entrada:invalid{
+    color: red;
+}
+
+.formulario .bi:valid{
+    color: green;
+}
+/*	diseño responsivo*/
+
+@media (max-width: 600px) {
+    .form-validacion {
+        padding: 30px;
+        max-width: 480px;
+    }
+    .form-validacion .entrada {
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+    .form-validacion .titulo {
+        margin-bottom: 50px;
+    }
+    .form-validacion .entrada>label span {
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+    .form-validacion select {
+        width: 240px;
+    }
+    .form-validacion input[type=checkbox] {
+        margin-top: 0;
+    }
+    .form-validacion .opciones>div {
+        margin: 0 0 10px;
+    }
+    .form-validacion button {
+        margin: 0;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 15px;
+    left: 400px;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+  
+
+}
+ul li{
+    display: inline-block;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 30px;
+    
+    
+
+}
+li a{
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(255, 255, 255);  
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline block;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    
+}
+
+ul li a.activo{
+    transform: none;
+    background-color: aqua;    
+    
+}
+ul li a:hover{
+opacity: 1;
+}
+
+footer {
+    background-color: #c680ffbe;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 660px;
+
+  }
+  
+  .footer-content {
+    color: #ffffff;
+    font-size: 14px;
+    
+    
+    
+  }

@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+  }
+header{
+    background-image: linear-gradient(to right,#8d93eb, #c680ffbe);
+    width: 100%; 
+    height: 150px;
+    box-sizing: border-box;
+}
+.logo{
+    position: absolute;        
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+
+.search-box {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #bc56f7;
+    border-radius: 20px;
+}
+
+.search-box input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.search-box button {
+    background-color: #bc56f7;
+    color: #b41b1b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+
+.search-button svg {
+    fill: rgb(255, 255, 255); 
+    height: 16px; 
+    width: 16px;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap; /* Hace que las imágenes se ajusten a una nueva línea cuando no hay espacio horizontal */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin-bottom: 60px;
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.search-results li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-results img {
+    width: 200px; /* Ancho de la imagen */
+    height: 200px; /* Alto de la imagen */
+    margin-right: 10px; /* Espaciado a la derecha de la imagen */
+    border-radius: 20%; /* Forma circular para la imagen */
+}
+
+/* Estilos para el texto debajo de la imagen */
+.search-results li span.texto {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -20px; /* Espaciado superior para separar el texto de la imagen */
+}
+
+.menu {
+    position: absolute;
+    top: 2vh;
+    right: 2vw; 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+ul li{
+      display: inline-block;
+      justify-content: space-around;
+      list-style: none;
+      margin-top: 30px;
+      
+      
+  
+  }
+li a{
+      display: inline-block;
+      font-size: 20px;
+      color: rgb(255, 255, 255);  
+      padding: 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline block;
+      opacity: 0.8;
+      font-family: Arial, Helvetica, sans-serif;
+}
+  
+ul li a.activo{
+      transform: none;
+      background-color: aqua;    
+      
+}
+ul li a:hover{
+  opacity: 1;
+}
+
+.search-results {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 100px;
+}
+
+.search-results img {
+    max-width: 1000%;
+    height: auto;
+}
+footer {
+    background-color: rgba(198, 128, 255, 0.747);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+  
+  .footer-content {
+    color: #ffffff;
+    font-size: 14px;
+    
+    
+  }
