@@ -29,7 +29,7 @@ h1{
 
 }
 body.zoomed h1 {
-  margin-top: -5vh; /* Usa vh para el desplazamiento hacia arriba */
+  margin-top: -5vh; 
 }
 
 header{
@@ -89,40 +89,76 @@ opacity: 1;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5vh;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
   
-  /* Define los estilos para las imágenes */
-  .image-container img {
-    max-width: 400px;
-    height: 400px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: opacity 0.3s ease-in-out;
-  }
   
-  /* Define la clase para la imagen actualmente visible */
-  .image-visible {
-    opacity: 1;
-  }
+.image-container img {
+  max-width: 400px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
   
-  /* Define la clase para las imágenes ocultas */
-  .image-hidden {
-    opacity: 0;
-  }
-  footer {
-    background-color: rgba(198, 128, 255, 0.747);
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
-  }
+.image-visible {
+  opacity: 1;
+}
   
-  .footer-content {
-    color: #ffffff;
-    font-size: 14px;
-    
-    
+
+.image-hidden {
+  opacity: 0;
+}
+footer {
+  background-color: #c680ffbe;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-content {
+  color: #ffffff;
+  font-size: 14px;    
+}
+.cotegorias {
+  position: relative;
+  background:#9d9aa0be;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+
+}
+.lis{
+  display: inline-block;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 20px;
+  margin-right: 200px;
+}
+.cotegorias ul li.lis:last-child {
+  margin-right: 0; /
+
+}
+
+.lis a{
+  display: inline-block;
+  font-size: 20px;
+  color: rgb(255, 255, 255);  
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline block;
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+ul .lis a.activo{
+  transform: none;
+  background-color: aqua;    
+      
+}
+  ul li a:hover{
+  opacity: 1;
   }

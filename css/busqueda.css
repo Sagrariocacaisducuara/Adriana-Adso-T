@@ -63,8 +63,8 @@ header{
 
 .search-results {
     display: flex;
-    flex-wrap: wrap; /* Hace que las imágenes se ajusten a una nueva línea cuando no hay espacio horizontal */
-    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; 
+    justify-content: center; 
     margin-bottom: 60px;
 }
 
@@ -82,13 +82,13 @@ header{
 }
 
 .search-results img {
-    width: 200px; /* Ancho de la imagen */
-    height: 200px; /* Alto de la imagen */
-    margin-right: 10px; /* Espaciado a la derecha de la imagen */
-    border-radius: 20%; /* Forma circular para la imagen */
+    width: 200px; 
+    height: 200px; 
+    margin-right: 10px; 
+    border-radius: 20%; 
 }
 
-/* Estilos para el texto debajo de la imagen */
+
 .search-results li span.texto {
     font-weight: bold;
     font-size: 16px;
