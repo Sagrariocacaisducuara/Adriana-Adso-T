@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/12.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <title>BTS SHOP</title>
+</head>
+<body>
+    <header>
+        <img class ="logo" src="img/12.png" alt="logo">
+        <h1>BTS SHOP</h1>
+    </header>
+
+    <div class="menu">
+        <ul>   
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="login.html">Iniciar Sesion</a></li>
+            <li><a href="busqueda.html">busqueda</a></li>
+            <li><a href="validar.html">validacion</a></li>
+            
+        </ul>
+    </div>
+    <div class="cotegorias">
+        <ul>   
+            <li class="lis"><a href="busqueda.html">Ropa</a></li>
+            <li class="lis"><a href="busqueda.html">Accesorios</a></li>
+            <li class="lis"><a href="busqueda.html">Zapatos</a></li>
+            <li class="lis"><a href="busqueda.html">Productos</a></li>
+            
+        </ul>
+    </div>
+    <div class="image-container">
+        <img class="image-visible" src="img/1.png" alt="Imagen 1">
+        <img class="image-hidden" src="img/2.jpeg" alt="Imagen 2">
+        <img class="image-hidden" src="img/4.jpeg" alt="Imagen 3">
+        <img class="image-hidden" src="img/7.jpeg" alt="Imagen 4">
+
+    </div>
+
+    <footer >
+        <div class="footer-content">
+            <p>© 2023 BTS SHOP. Todos los derechos reservados.</p>
+        </div>
+        
+    </footer>
+
+    <script>
+        // JavaScript para manejar las transiciones de las imágenes
+        const images = document.querySelectorAll('.image-container img');
+        let currentIndex = 0;
+
+        setInterval(() => {
+            images[currentIndex].classList.remove('image-visible');
+            images[currentIndex].classList.add('image-hidden');
+
+            currentIndex = (currentIndex + 1) % images.length;
+
+            images[currentIndex].classList.remove('image-hidden');
+            images[currentIndex].classList.add('image-visible');
+        }, 1500); // velocidad de la transiscion de las imagenes
+
+
+    </script>
+</body>
+</html>
