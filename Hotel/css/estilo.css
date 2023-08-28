@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+
+}
+
+body{
+    margin: 0 auto;
+    width: 1100px;
+    padding: 50px;
+
+}
+header{
+    background-color: rgb(131, 187, 230);
+    text-align: center;
+    padding: 30px;
+    font-family: sans-serif;
+}
+
+.titulo {
+    color: gray;
+    font-size: 24px;
+    font-weight: bold;
+}
+.servicios{
+    display: flex;
+    justify-content: space-between;
+    background-color: violet;
+}

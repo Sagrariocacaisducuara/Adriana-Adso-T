@@ -160,9 +160,9 @@ padding: 50px 20px 50px 20px;
 }
 /*se fija el contenido de columnas*/
 .articulo{
-    column-count: 3;
-    width: 90%;
-    column-gap: 50px;
+    column-count: 2;
+    width: 95%;
+    column-gap: 40px;
 
     
 }
@@ -229,13 +229,15 @@ padding: 50px 20px 50px 20px;
     padding: 10px 0 10px 0;
 }
 
-
+li{
+    margin-top: 45px ;    
+}
 
 /*formulario*/
 
 
 form {
-    position: absolute;
+    position: relative;
     max-width: 200px;
     margin-top: 5%;
     padding: 20px;
@@ -284,4 +286,67 @@ textarea {
 
 .submit-button:hover {
     background-color: #0056b3;
+}
+
+/*secion lateral*/
+
+aside{
+    display: table-cell;
+    width: 200px;
+}
+aside a{
+    color: black;
+}
+
+
+/*footer*/
+
+footer{
+    display: block;
+    width: 1100px;
+    padding: 20px;
+    z-index: 10px;
+    position: relative;
+    background-color: rgb(160, 159, 159);
+}
+
+.abajo{
+display: table;
+padding: relative;
+text-align: center;
+
+
+}
+
+.abajo section{
+    margin: 100px;
+    position: relative;
+    display: table-cell;
+    width: 50px;
+      
+
+}
+
+.abajo section a{
+color: rgba(255, 255, 255, 0.5);    
+
+
+
+}
+.abajo section a:hover{
+    text-decoration: none;
+
+}
+
+
+.abajo section li{
+    list-style: none;
+}
+
+.abajo section p{
+
+}
+
+.abajo section i{
+
 }
