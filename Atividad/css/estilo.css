@@ -13,7 +13,7 @@ header{
 }
 body{
     margin: 0 auto;
-    width: 950px;
+    width: 1100px;
     padding: 0;
     background-color: rgb(238, 246, 252);
 }
@@ -160,9 +160,9 @@ padding: 50px 20px 50px 20px;
 }
 /*se fija el contenido de columnas*/
 .articulo{
-    column-count: 2;
-    width: 66%;
-    column-gap: 40px;
+    column-count: 3;
+    width: 90%;
+    column-gap: 50px;
 
     
 }
@@ -218,8 +218,8 @@ padding: 50px 20px 50px 20px;
 
 .comentario article:nth-child(odd){
     padding: 23px;
-    background-color: gray;
-    border: 1px solid #faa4a4;
+    background-color: rgb(160, 159, 159);
+    box-shadow: 6px 6px 6px 6px cadetblue;
     border-radius: 20px;
     
 }
@@ -231,3 +231,57 @@ padding: 50px 20px 50px 20px;
 
 
 
+/*formulario*/
+
+
+form {
+    position: absolute;
+    max-width: 200px;
+    margin-top: 5%;
+    padding: 20px;
+    box-shadow: 6px 6px 6px 6px cadetblue;
+}
+
+h2 {
+
+    font-size: 24px;
+    margin-top: 0px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
