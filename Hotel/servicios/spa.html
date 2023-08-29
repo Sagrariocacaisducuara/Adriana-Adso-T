@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="icon" href="/Atividad/img/logo verde.png">
+    <link rel="stylesheet" href="/Hotel/css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".servicio-link").on("click", function (event) {
+                event.preventDefault();
+                const targetPage = $(this).attr("href");
+                
+                $("body").fadeOut(300, function () {
+                    window.location.href = targetPage;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">SPA</h1>
+    </header>
+    <nav class="menu2">
+        <a class="servicio-link" href="piscina.html">piscina</a>
+        <a class="servicio-link" href="bar.html">Bar</a>
+        <a class="servicio-link" href="restaurante.html">Restaurante</a>
+        <a class="servicio-link" href="room.html">Romm Service</a>
+
+    </nav>
+    <section class="descripcion">
+        <div class="descripcion-texto">
+            <h2>Un espacio de relajacion</h2>        
+            <p class="servicio-description">Las bebidas preparadas y tragos de los bartenders derivan de algunas recetas sencillas con tequila, ginebra, ron o vodka. Se dice que si un barman puede hacer una margarita, daiquiri, una piña colada y un martini, debe ser capaz de hacer casi cualquier bebida coctelera que se le pida.
+            </p>
+            
+            <h2>Planes Corporativos y convenios</h2>
+            <p>Promueve la salud y el bienestar para tus colaboradores con AR SPA Contamos con variedad de planes a nivel corporativo para la relajación del cuerpo y la salud mental, que fomentaran un clima organizacional favorable y un estilo de vida saludable
+            <br><br>Si estás buscando premiar a tus empleados o regalar bonos a tus clientes, AR Spa se adapta a tus necesidades a través de un variado portafolio de servicios. Celebraciones para el día de la madre, día del padre, San Valentin, cumpleaños, día de la secretaria, eventos de despedida de fin de año y muchos más. Descubre con nosotros el concepto de bienestar, descanso y relajación que ofrecemos.</p>
+            
+            
+        </div>
+
+        <div class="descripcion-imagen">
+            <img class="imagen" src="/Hotel/img/pexels-pixabay-261105.jpg" alt="Piscina">
+        </div>
+
+    </section>
+</body>
+</html>

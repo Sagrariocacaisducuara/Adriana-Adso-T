@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     font-family: sans-serif;
-
+    text-align: justify;
 }
 
 body{
@@ -12,19 +12,120 @@ body{
 
 }
 header{
-    background-color: rgb(131, 187, 230);
+    background-color: rgb(161, 167, 161);
     text-align: center;
     padding: 30px;
     font-family: sans-serif;
 }
 
 .titulo {
-    color: gray;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
 }
-.servicios{
+.descripcion {
+    padding: 30px;
     display: flex;
-    justify-content: space-between;
-    background-color: violet;
+    flex-direction: row;
+    align-items: center;
 }
+
+.descripcion-texto {
+    max-width: 40%;
+    flex: 1;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.servicio-link {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.servicio-link:hover {
+    color: #555;
+}
+/* Estilos para la página de cada servicio */
+.servicio-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.titulo2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+/* estilo para el menu2*/
+.menu2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 60%;
+}
+.servicio-link {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.servicio-link:hover {
+    color: #555;
+}
+/* Estilos para la página de cada servicio */
+.servicio-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*estilo de las imagenes   */
+.imagen-container {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.imagen {
+    padding: 20px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+
+
+
+
+

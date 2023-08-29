@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>servicios</title>
-    <link rel="icon" href="/Adriana-Adso-T/Atividad/img/logo verde.png">
-    <link rel="stylesheet" href="/Adriana-Adso-T/Hotel/css/estilo.css">
+    <title>Servicios</title>
+    <link rel="icon" href="/Atividad/img/logo verde.png">
+    <link rel="stylesheet" href="/Hotel/css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".servicio-link").on("click", function (event) {
+                event.preventDefault();
+                const targetPage = $(this).attr("href");
+                
+                $("body").fadeOut(300, function () {
+                    window.location.href = targetPage;
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
         <h1 class="titulo">Servicios</h1>
     </header>
-    
-    <section class="servicios"></section>
-        <h1>Piscina</h1>
-        <p>Deja atrás el cansancio del día a día y adquiere esta práctica libre de turco y sauna. Aquí podrás
-            relajar tu sistema nervioso, hidratar tu piel si sufres de resequedad, otorgándole un aspecto fresco
-            y radiante, además de mejorar tu respiración.
-        </p>
-    </section>
+    <nav class="menu">
+        <a class="servicio-link" href="piscina.html">Piscina</a>
+        <a class="servicio-link" href="restaurante.html">Restaurante</a>
+        <a class="servicio-link" href="bar.html">Bar</a>
+        <a class="servicio-link" href="spa.html">Spa</a>
+        <a class="servicio-link" href="room.html">Romm Service</a>
+    </nav>
 </body>
 </html>
