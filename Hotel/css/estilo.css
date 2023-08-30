@@ -9,6 +9,7 @@ body{
     margin: 0 auto;
     width: 1100px;
     padding: 50px;
+    background-color: rgb(190, 190, 189);
 
 }
 header{
@@ -127,5 +128,66 @@ header{
 
 
 
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.servicio {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 6px 6px 6px 6px cadetblue;
+}
+.servicio:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgb(25, 165, 241);
+}
+.servicio img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.servicio-contenido {
+    padding: 20px;
+}
+.servicio h2 {
+    margin-top: 0;
+}
+.servicio p {
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
+.footer-menu {
+    background-color: aliceblue;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-menu a {
+    color: #060606;
+    text-decoration: none;
+    margin: 0 15px;
+}
