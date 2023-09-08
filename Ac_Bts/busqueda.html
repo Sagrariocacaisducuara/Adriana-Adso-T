@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda</title>
+    <link rel="icon" href="/Ac_Bts/img/12.png">
+    <link rel="stylesheet" href="/Ac_Bts/css/busqueda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-R7XCrj58yGM9wLRVChjKLBkEkbv6bBfplfS9ax3vr1CPPT8LBe7fPBEVmcteGy9Oj6V87f7yRLGrLoYVR/iZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simplelightbox.min.css">
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/12.png" alt="logo">
+    </header>
+    <div class="search-box">
+        <input type="text" placeholder="Buscar..." id="searchInput">
+        <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        </button>
+    </div>
+    <div class="search-results">
+        <img class="collage-image" src="img/w.jpeg" alt="Imagen 1">
+        <img class="collage-image" src="img/6.jpeg" alt="Imagen 2">
+        <img class="collage-image" src="img/Jk.jpeg" alt="Imagen 3">
+        <img class="collage-image" src="img/R.jpeg" alt="Imagen 4">
+        <img class="collage-image" src="img/v.jpeg" alt="Imagen 5">
+        <img class="collage-image" src="img/8.jpeg" alt="Imagen 6">
+        <img class="collage-image" src="img/9.jpeg" alt="Imagen 7">
+        <img class="collage-image" src="img/0.jpeg" alt="Imagen 8">
+        <img class="collage-image" src="img/b.jpeg" alt="Imagen 9">
+        <img class="collage-image" src="img/h.jpeg" alt="Imagen 10">
+        <img class="collage-image" src="img/10.jpeg" alt="Imagen 11">
+        <img class="collage-image" src="img/11.jpeg" alt="Imagen 12">
+        
+    </div>
+
+    <div class="menu">
+        <ul>   
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="login.html">Iniciar Sesion</a></li>
+            <li><a href="busqueda.html">busqueda</a></li>
+            <li><a href="validar.html">validacion</a></li>
+            
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simple-lightbox.min.js"></script>
+    <script>
+
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.querySelector('.search-results');
+        const collageImages = document.querySelectorAll('.collage-image');
+        const originalCollage = Array.from(collageImages);
+        const originalImageStates = Array.from(collageImages).map(image => !image.classList.contains('hide'));
+
+        searchInput.addEventListener('input', performSearch);
+
+        // Objeto que mapea términos de búsqueda con las rutas de las imágenes
+        const imageMap = {
+            'army bomb': 'img/3.png',
+            'cooky': 'img/3.jpg',
+            'album': 'img/i.png',
+            'mochila': 'img/h.png',
+            'gorra': 'img/t.png',
+            'crop top': 'img/b.png',
+            'collar': 'img/c.png',
+            'zapatos': 'img/z.png',
+            'lampara': 'img/l.png'
+        };
+
+        function resetImageVisibility() {
+            collageImages.forEach((image, index) => {
+                if (originalImageStates[index]) {
+                    image.classList.remove('hide');
+                } else {
+                    image.classList.add('hide');
+                }
+            });
+        }
+
+        resetImageVisibility();
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+
+            collageImages.forEach(image => {
+                const altText = image.getAttribute('alt').toLowerCase();
+                if (altText.includes(searchTerm)) {
+                    image.classList.remove('hide');
+                } else {
+                    image.classList.add('hide');
+                }
+            });
+
+            // Simulación de búsqueda en un array de datos
+            const data = [
+                'army bomb',
+                'cooky',
+                'album',
+                'mochila',
+                'gorra',
+                'crop top',
+                'collar',
+                'zapatos',
+                'lampara'
+            ];
+
+            const filteredData = data.filter(item => item.toLowerCase().includes(searchTerm));
+
+            displayResults(filteredData);
+        }
+        function displayResults(results) {
+            
+            if (searchInput.value.trim() === '') {
+                searchResults.innerHTML = '';
+                return;
+            }
+
+            searchResults.innerHTML = '';
+
+            if (results.length === 0) {
+                const noResultsMessage = document.createElement('p');
+                noResultsMessage.textContent = 'No se encontraron resultados.';
+                searchResults.appendChild(noResultsMessage);
+                return;
+            }
+
+            const ul = document.createElement('ul');
+            results.forEach(item => {
+                const li = document.createElement('li');
+                const img = document.createElement('img');
+                img.src = imageMap[item.toLowerCase()]; // Obtener la ruta de la imagen del objeto
+                img.alt = item;
+                li.appendChild(img);
+
+                // Crea el elemento span para el texto
+                const span = document.createElement('span');
+                span.textContent = item;
+                span.classList.add('texto'); // Agrega la clase "texto" al span
+
+                li.appendChild(span); // Agrega el span al li
+                ul.appendChild(li);
+            });
+
+            searchResults.appendChild(ul);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializa el plugin de SimpleLightbox para las imágenes con clase 'collage-image'
+            const lightbox = new SimpleLightbox('.collage-image', {
+                captionType: 'attr',
+                captionsData: 'alt',
+                captionPosition: 'bottom',
+            });
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 BTS SHOP. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

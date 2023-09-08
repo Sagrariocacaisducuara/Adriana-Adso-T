@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="icon" href="img/12.png">
+    <title>FORMULARIO REGISTRO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/dist/parsley.min.css">
+</head>
+<body>
+    <header>
+        <img class ="logo" src="img/12.png" alt="logo">
+        <h1>BTS SHOP</h1>
+    </header>
+    <div class="contenidoreg">
+        <form action="" class="formu" id="registro-form" data-parsley-validate>
+            <p class="registra-titulo">REGISTRATE</p>
+            <div class="form-registro">
+                <label for="minombre">Nombre</label>
+                <input type="text" id="minombre" required data-parsley-required-message="Por favor, ingresa tu nombre">
+            </div>
+            <div class="form-registro">
+                <label for="miapellido">Apellido</label>
+                <input type="text" id="miapellido" required data-parsley-required-message="Por favor, ingresa tu apellido">
+            </div>
+            <div class="form-registro">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" required data-parsley-type-message="Ingresa un correo electrónico válido">
+            </div>
+            <div class="form-registro">
+                <label for="mobile">Celular</label>
+                <input type="text" id="mobile" required data-parsley-type="digits" data-parsley-type-message="Ingresa solo números">
+            </div>
+            <div class="form-registro">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required data-parsley-minlength="6" data-parsley-minlength-message="La contraseña debe tener al menos 6 caracteres">
+            </div>
+            <div class="form-registro">
+                <label for="repetirpassword">Repetir contraseña</label>
+                <input type="password" id="repetirpassword" required data-parsley-equalto="#password" data-parsley-equalto-message="Las contraseñas no coinciden">
+            </div>
+
+            <div class="terminos">
+                <input type="checkbox" id="terminoscondiciones" required data-parsley-errors-container=".error-terms">
+                <label for="terminoscondiciones">Acepta las condiciones</label>
+                <span class="error-terms"></span>
+                <a href="#">Términos y condiciones</a>
+            </div>
+
+            <div class="boton" >
+                <input type="submit" value="REGISTRAR">
+            </div>
+
+        </form>
+
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 BTS SHOP. Todos los derechos reservados.</p>
+    </footer>
+
+    <div class="menu">
+        <ul>
+            <li> <a href="registro.html">Registro</a></li>
+            <li> <a href="login.html">Iniciar Sesión</a></li>
+            <li> <a href="busqueda.html">Búsqueda</a></li>
+            <li> <a href="validar.html" class="activo">Validación</a></li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/dist/parsley.min.js"></script>
+    <script>
+        // Agregar un event listener al formulario para el evento de envío (submit)
+        document.getElementById('registro-form').addEventListener('submit', function(evento) {
+            evento.preventDefault(); // Evitar que el formulario se envíe si hay errores
+            // Si todas las validaciones son correctas, puedes enviar el formulario aquí.
+            // Por ahora, mostraremos una alerta para indicar una validación exitosa.
+            alert('Formulario validado con éxito. ¡Gracias por registrarte!');
+        });
+    </script>
+</body>
+</html>

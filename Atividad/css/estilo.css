@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+header{
+    background-color: rgb(238, 246, 252);
+    text-align: center;
+    padding: 30px;
+    font-family: sans-serif;
+}
+body{
+    margin: 0 auto;
+    width: 1100px;
+    padding: 0;
+    background-color: rgb(238, 246, 252);
+}
+
+/* .logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 250px;
+}    
+.logo:hover {
+    transform: scale(1.5);
+}
+.titulo{
+    position: relative;
+    margin-left: 15px;
+    margin-top: 40px;
+
+   
+} */
+.logo {
+    height: 100px;
+    transition: height 0.3s;
+}
+
+.logo:hover {
+    height: 120px;
+}
+
+.titulo {
+    color: gray;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*menu*/
+
+
+.navegador{
+    background-color: rgb(161, 167, 161);
+    padding: 20px;
+}
+.navegador .menu a{
+    text-decoration: none;
+
+    
+
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li a{
+    position: relative;
+    padding:1px 10px;
+}
+.menu li:hover{
+    background-color: rgb(151, 218, 165);
+}
+
+/*submenu*/
+.submenu{
+    display: none;
+    /*position:relative;*/
+    background-color: rgb(73, 74, 73);
+    position:absolute;
+    list-style: none;
+}
+
+.menu li:hover .submenu{
+    display:block;
+}
+.submenu li{
+    padding: 5px 10px;
+}
+.submenu li.hover{
+    background-color: rgb(43, 220, 226);
+}
+
+a{
+color: aliceblue;
+font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+    }
+}
+/*Banner*/
+.banner_estatico h2,
+.banner_estatico{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.banner_estatico{
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: rgb(212, 206, 206);
+    border-radius: 22px;
+    background-image: url(/Atividad/img/banner3.jpg);
+    background-size: 100% 100%;
+    box-shadow: 6px 6px 6px 6px cadetblue;
+    width: 70%;
+}
+h2{
+    margin-right: 100px;
+    padding: 50px;
+    left: 50px;
+    color:  rgb(43, 148, 78);
+    font-size: 30px;
+
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*contenido*/
+
+
+
+/*articulo*/
+.contenido{
+    display: table;
+}
+
+/*rederizar el contenedor de estado*/
+.entidad{
+padding: 50px 20px 50px 20px;
+}
+/*se fija el contenido de columnas*/
+.articulo{
+    column-count: 2;
+    width: 95%;
+    column-gap: 40px;
+
+    
+}
+
+.articulo p{
+    text-align: justify;
+}
+.aprendis{
+    width: 100%;
+}
+.escudo1{
+    border-radius: 3px;}
+
+
+.comentario article a{
+    color: black;
+    font-weight: bold;
+    display: block;
+    text-decoration: none
+
+}
+.comentario{
+    margin-top: 100px;
+;}
+
+.comentario article{
+    display: table;
+    padding: 22px; 
+       
+}
+
+.comentario article div{
+    display: table-cell;
+    width: 200px;
+    padding-right: 22px;
+}
+.comentario article{
+    display: table;
+    padding: 22px;
+}
+.comentario article a{
+    display: block;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.comentario article div{
+    display: table-cell;
+
+}
+
+.comentario article:nth-child(odd){
+    padding: 23px;
+    background-color: rgb(160, 159, 159);
+    box-shadow: 6px 6px 6px 6px cadetblue;
+    border-radius: 20px;
+    
+}
+.comentario h2{
+    font-size: 26px;
+    font-family: sans-serif;
+    padding: 10px 0 10px 0;
+}
+
+li{
+    margin-top: 45px ;    
+}
+
+/*formulario*/
+
+
+form {
+    position: relative;
+    max-width: 200px;
+    margin-top: 5%;
+    padding: 20px;
+    box-shadow: 6px 6px 6px 6px cadetblue;
+}
+
+h2 {
+
+    font-size: 24px;
+    margin-top: 0px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/*secion lateral*/
+
+aside{
+    display: table-cell;
+    width: 200px;
+}
+aside a{
+    color: black;
+}
+
+
+/*footer*/
+
+footer{
+    display: block;
+    width: 1100px;
+    padding: 20px;
+    z-index: 10px;
+    position: relative;
+    background-color: rgb(160, 159, 159);
+}
+
+.abajo{
+display: table;
+padding: relative;
+text-align: center;
+
+
+}
+
+.abajo section{
+    margin: 100px;
+    position: relative;
+    display: table-cell;
+    width: 50px;
+      
+
+}
+
+.abajo section a{
+color: rgba(255, 255, 255, 0.5);    
+
+
+
+}
+.abajo section a:hover{
+    text-decoration: none;
+
+}
+
+
+.abajo section li{
+    list-style: none;
+}
+
+.abajo section p{
+
+}
+
+.abajo section i{
+
+}

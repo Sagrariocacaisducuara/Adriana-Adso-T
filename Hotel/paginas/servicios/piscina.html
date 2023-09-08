@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>servicios</title>
+    <link rel="icon" href="/Atividad/img/logo verde.png">
+    <link rel="stylesheet" href="/Hotel/css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".servicio-link").on("click", function (event) {
+                event.preventDefault();
+                const targetPage = $(this).attr("href");
+                
+                $("body").fadeOut(300, function () {
+                    window.location.href = targetPage;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1 class="titulo">Piscina</h1>
+        </header>
+        
+        <nav class="menu2">
+            <a class="servicio-link" href="restaurante.html">Restaurante</a>
+            <a class="servicio-link" href="bar.html">Bar</a>
+            <a class="servicio-link" href="spa.html">Spa</a>
+            <a class="servicio-link" href="room.html">Romm Service</a>
+
+        </nav>
+        <section class="descripcion">
+            <div class="descripcion-texto">
+                <p>Deja atrás el cansancio del día a día y adquiere esta práctica libre de turco y sauna. Aquí podrás
+                    relajar tu sistema nervioso, hidratar tu piel si sufres de resequedad, otorgándole un aspecto fresco
+                    y radiante, además de mejorar tu respiración. <br><br>Durante la sesión de este baño húmedo podrás eliminar toxinas a través del sudor, activar la
+                    circulación sanguínea y limpiar a profundidad los poros de tu rostro, evitando así la aparición de
+                    acné. <br><br>Y que mejor si después te relajas con una deliciosa sesión de masajes. ¿Tentador no? No lo pienses
+                    más. ¡Te esperamos! <br><br>Este servicio de 1 hora, está dirigido a personas de 18 años en adelante y se debe adquirir bajo
+                    previa reserva.</p></p>
+            </div>
+            <div class="descripcion-imagen">
+                <img class="imagen" src="/Hotel/img/pexels-pixabay-261101.jpg" alt="Piscina">
+            </div>
+        </section>
+        
+        
+    </div>
+
+    
+</body>
+</html>

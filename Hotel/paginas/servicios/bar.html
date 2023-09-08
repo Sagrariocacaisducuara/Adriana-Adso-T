@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="icon" href="/Atividad/img/escudo.jpg">
+    <link rel="stylesheet" href="/Hotel/css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".servicio-link").on("click", function (event) {
+                event.preventDefault();
+                const targetPage = $(this).attr("href");
+                
+                $("body").fadeOut(300, function () {
+                    window.location.href = targetPage;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">BAR</h1>
+    </header>
+    <nav class="menu2">
+        <a class="servicio-link" href="piscina.html">piscina</a>
+        <a class="servicio-link" href="restaurante.html">Restaurante</a>
+        <a class="servicio-link" href="spa.html">Spa</a>
+        <a class="servicio-link" href="room.html">Romm Service</a>
+
+    </nav>
+    <section class="descripcion">
+        <div class="descripcion-texto">
+            <h2>TRAGOS Y BEBIDAS</h2>        
+            <p class="servicio-description">Las bebidas preparadas y tragos de los bartenders derivan de algunas recetas sencillas con tequila,
+                ginebra, ron o vodka. Se dice que si un barman puede hacer una margarita, daiquiri, una piña
+                colada y un martini, debe ser capaz de hacer casi cualquier bebida coctelera que se le pida.</p><br>
+            
+            <h2>NUESTRO TOP DE BEBIDAS</h2>
+            <p>1. El Mojito: Este trago es una de las bebidas preparadas con ron de origen cubano. Para
+                prepararse, exprime suavemente jugo de limón, azúcar y hojas de menta con un «embrollo».
+                Añade ron blanco con un poco de agua de soda, y colma el vaso con hielo. Hay muchas
+                variaciones, tales como mojitos de bayas y de manzana, que utilizan licores saborizados.</p><br>
+            
+            <p>2.Cosmopolitan: Los «cosmopolitan» son una bebida preparada con vodka, además contiene Triple Sec (un licor con sabor a naranja), jugo de arándano y jugo de limón. Se sirven en copas de martini, a veces con una rodaja de limón para decorar.</p><br>
+
+            <p>3. Margaritas Existen muchas variaciones, pero es una de las bebidas preparadas con tequila que prefieren los clientes. Además, contiene Triple Sec y jugo de lima o limón. Las Margaritas congeladas tienen hielo picado, pero también se pueden servir sin él. Los vasos de Margarita tiene una forma distintiva con dos ‘recipientes’ y un tallo largo, sin embargo, la bebida se sirve a menudo en una copa de cóctel estándar. El borde está normalmente recubierto de sal.</p><br>
+
+
+            <p>4. Martini: Un martini original es una bebida preparada con ginebra y vermut seco. Los puristas creen que el vidrio sólo debe enjuagarse con vermut antes de verter la ginebra helada, sin embargo, algunos camareros mezclan tres partes de ginebra y una parte de vermut en una coctelera antes de servir. Las aceitunas o un ‘chorro’ de limón son guarniciones comunes. Existen muchas variaciones con vodka ahora, como martinis de manzana. Sin embargo, estos no son considerados auténticos martinis.</p><br>
+
+
+            <p>5. Mai Tai: La palabra «maitai» significa «bueno» en tahitiano, y la bebida fue inventada supuestamente en un restaurante polinesio en la década de 1940. Es una de las bebidas preparadas con ron blanco. Además lleva ron oscuro, naranja «curaçao», jugo de piña, jarabe de azúcar y jugo de limón. A veces, se agregan jarabes de albaricoque y/o de almendra.
+            </p><br>
+
+            <P>6. Caipirinha: El ingrediente principal de esta famosa bebida brasileña es cachaça, un espíritu similar al ron que se hace de la caña de azúcar fermentada. Es un cóctel sencillo: una lima se corta en trozos y se agrega en un vaso con el azúcar. El hielo triturado se añade al vaso y luego se vierte la cachaça.</P><br>
+
+            <P>7. Daiquiri: Los daiquiris pueden hacerse con casi cualquier fruta. Son una bebida preparada con ron. Los daiquiris de fresa, plátano y melón son muy populares, así como los daiquiris congelados donde se llena el vaso con hielo picado. La receta original es simplemente ron blanco, jarabe de azúcar y jugo de limón combinado en una coctelera y vertido en un vaso de martini frío.
+            </P><br>
+
+            <P>8. Piña colada: La piña colada es la bebida nacional de Puerto Rico. Contiene ron blanco, coco, crema y jugo de piña. Se sirve en un vaso grande con hielo picado.</P><br>
+
+            <P>9. Long Island Ice Tea: A pesar de su nombre, este cóctel no contiene té. Vodka, tequila, ginebra, ron, triple sec, y un poco de coca-cola se vierte en una coctelera y se mezcla a fondo antes de verter en un vaso alto. A veces, también se agrega jarabe de azúcar o «mezcla de dulce y amargo» (una mezcla de jugo de limón y azúcar).
+            </P><br>
+                
+            <P>10. White Russian: Un White Russian (ruso blanco) es una de las bebidas preparadas con vodka. La receta lleva: vodka, licor de café, y Bailey; todo mezclado. El hielo puede ser añadido. Esta bebida se llama así porque su ingrediente principal es el vodka, aunque se cree que se originó en los EE.UU.
+            </P>
+        </div>
+
+        <div class="descripcion-imagen">
+            <img class="imagen" src="/Hotel/img/pexels-pixabay-261105.jpg" alt="Piscina">
+        </div>
+
+    </section>
+</body>
+</html>
