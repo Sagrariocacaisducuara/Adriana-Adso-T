@@ -19,6 +19,7 @@ body{
     padding-top: 50px;
     flex-shrink: 0;
     height: 100vh;
+    background: rgb(217, 217, 228);
 }
 
 header{
@@ -90,14 +91,243 @@ header span{
         top: 0;
     }
 }
-.formulario{
+/* .formulario{
     background-color: rgb(255, 255, 255);
     width: 30%;
     padding: 40px;
     margin-left: 35%;
     border-radius: 30px;
+} */
+
+#intro .formulario {
+
+    background-color: #e4dada;
+    width: 30%;
+    height: 250px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #211f1f;
+    margin-left: 35%;
+   margin-bottom: 80px;
+   border-radius: 30px;
+}
+.formulario h2 {
+    color: #582567;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
 }
 
-.bloque{
-    background: rgb(217, 217, 228);
+ .formulario .info {
+    margin-bottom: 20px;
 }
+
+
+.info label {
+    display: block;
+    color: #582567;
+    font-weight: bold;
+}
+
+
+.info input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4d4343;
+    padding: 5px;
+    outline: none;
+}
+
+.formulario .btn_enviar {
+    background-color: #f7a4ff;
+    display: block;
+    border: none;
+    color: #e2dddd;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 35%;
+}
+
+
+
+#servicios {
+    background: linear-gradient(transparent, black), url(../img/sitio/servicios.jpg);
+    background-size: cover;
+}
+ 
+ #servicios h2 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ 
+ #servicios .contenido {
+     max-width: 90%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+}
+
+#servicios .servicio1 {
+    background-image: url(/Hotel/img/pexels-pixabay-261105.jpg);
+}
+
+#servicios .servicio2 {
+    background-image: url(/Hotel/img/restaurante.jpg);
+}
+
+#servicios  .servicio3 {
+    background-image: url(/Hotel/img/bar.jpg);
+}
+
+#servicios .servicio4 {
+    background-image: url(/Hotel/img/spa.jpg);
+}
+
+#servicios  .servicio5 {
+    background-image: url(/Hotel/img/room.jpg);
+}
+
+
+#servicios .item {
+    width: 25%; /*el contenedor item pasa de 25% ancho con hover a 90% de ancho*/
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 10px;
+    transition: .7s;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#servicios .item:hover {
+   width: 90%;
+}
+
+#servicios  .overlay {
+   position: absolute;
+   background: linear-gradient(to bottom, transparent 80%, black);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+#servicios .item .titulo {
+   position: absolute;
+   bottom: -10px;
+   letter-spacing: 2px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #e7e7dd;
+   font-style: 20px;
+   background-color: black;
+   padding: 10px 0;
+   width: 100%;
+   opacity: 0;
+   transition: .3s;
+}
+
+#servicios .item:hover .titulo {
+   bottom: -20px;
+   opacity: 1;
+}
+
+
+#contactenos .formulario {
+
+    background-color: #e4dada;
+    width: 30%;
+    height: 250px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #211f1f;
+    margin-left: 35%;
+   margin-bottom: 80px;
+   border-radius: 30px;
+}
+
+
+#registro .formulario {
+    background-color: #e4dada;
+    width: 30%;
+    height: 70%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 35%;
+   margin-bottom: 80px;
+   border-radius: 30px;
+}
+
+#contactenos .item{
+    text-align: center;
+    
+}
+
+    /* Estiliza la sección con el ID "reservas" */
+#reservas {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    }
+
+    /* Estiliza el encabezado dentro de la sección */
+    #reservas h2 {
+        color: #333;
+        font-size: 24px;
+    }
+
+    /* Estiliza el párrafo dentro de la sección */
+    #reservas p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Estiliza los enlaces dentro de la sección */
+    #reservas a {
+        text-decoration: none;
+        color: #007bff; /* Color de enlace azul */
+    }
+
+    /* Estiliza los elementos (cláusula, condiciones de pago, reservas) */
+    .item {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estiliza los encabezados de los elementos */
+    .item h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    /* Agrega efecto al pasar el cursor sobre los elementos */
+    .item:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Estiliza la superposición en los elementos (para efecto al pasar el cursor) */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 5px;
+    }
+
+    /* Agrega superposición al pasar el cursor sobre el elemento */
+    .item:hover .overlay {
+        opacity: 1;
+    }
