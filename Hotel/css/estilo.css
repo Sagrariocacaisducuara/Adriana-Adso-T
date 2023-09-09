@@ -1,21 +1,23 @@
-*{
-    margin:0;
-    padding:0;
+/* Estilos base para todos los tamaños de pantalla */
+* {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
     text-align: justify;
 }
 
-body{
-    margin: 0 auto;
-    width: 1100px;
-    padding: 50px;
+body {
+    margin: 0;
+    max-width: 100%;
+    padding: 2%;
     background-color: rgb(190, 190, 189);
-
 }
-header{
+
+header {
     background-color: rgb(161, 167, 161);
     text-align: center;
-    padding: 30px;
+    max-width: 100%;
+    padding: 2% 0;
     font-family: sans-serif;
 }
 
@@ -25,17 +27,18 @@ header{
     font-weight: bold;
     text-align: center;
 }
+
 .descripcion {
-    padding: 30px;
+    padding: 2%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
 .descripcion-texto {
-    max-width: 40%;
-    flex: 1;
-    padding: 20px;
+    max-width: 100%;
+    padding: 2%;
+    text-align: center;
 }
 
 .menu {
@@ -43,17 +46,20 @@ header{
     justify-content: center;
     margin-top: 20px;
 }
+
 .servicio-link {
     text-decoration: none;
     color: #333;
-    margin: 0 20px;
+    margin: 0 2px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
 .servicio-link:hover {
     color: #555;
 }
+
 /* Estilos para la página de cada servicio */
 .servicio-page {
     display: flex;
@@ -64,19 +70,19 @@ header{
     font-size: 1.5rem;
     text-align: center;
 }
+
 .titulo2 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-
-/* estilo para el menu2*/
+/* Estilo para el menu2 */
 .menu2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-left: 60%;
 }
+
 .servicio-link {
     text-decoration: none;
     color: #333;
@@ -85,9 +91,11 @@ header{
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
 .servicio-link:hover {
     color: #555;
 }
+
 /* Estilos para la página de cada servicio */
 .servicio-page {
     display: flex;
@@ -99,34 +107,20 @@ header{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-/*estilo de las imagenes   */
+/* Estilo para las imágenes */
 .imagen-container {
     position: relative;
     display: flex;
-    justify-content: left;
-    max-width: 50%;
-    height: auto;
+    justify-content: center; /* Centrar imágenes */
+    width: 100%;
     border-radius: 10px;
-
 }
 
 .imagen {
-    padding: 20px;
-    max-width: 500px;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-left: 10%;
 }
-
-
-
 
 h1 {
     color: rgb(255, 255, 255);
@@ -143,8 +137,10 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/* Ajustar los servicios para dispositivos móviles */
 .servicio {
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: calc(50% - 20px); /* 2 columnas en dispositivos móviles */
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -152,36 +148,40 @@ h1 {
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease;
-    box-shadow: 6px 6px 6px 6px cadetblue;
 }
+
 .servicio:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 10px rgb(25, 165, 241);
 }
+
 .servicio img {
     width: 100%;
     height: auto;
     display: block;
 }
+
 .servicio-contenido {
     padding: 20px;
 }
+
 .servicio h2 {
     margin-top: 0;
 }
+
 .servicio p {
     line-height: 1.6;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-
+/* Estilos del menú del pie de página */
 .footer-menu {
     background-color: aliceblue;
-    color: #fff;
+    color: #060606;
     text-align: center;
     padding: 20px;
 }
@@ -190,4 +190,28 @@ a{
     color: #060606;
     text-decoration: none;
     margin: 0 15px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenido {
+        padding: 10px;
+    }
+
+    /* Ajustar el tamaño de fuente para dispositivos móviles */
+    body {
+        font-size: 16px;
+    }
+
+    .servicio {
+        flex-basis: calc(100% - 20px); /* Una columna completa en dispositivos móviles */
+    }
+
+    .menu2 {
+        margin-left: 0;
+    }
+
+    .servicio-link {
+        margin: 0 10px;
+    }
 }
