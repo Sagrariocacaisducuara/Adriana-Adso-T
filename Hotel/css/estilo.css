@@ -1,4 +1,4 @@
-/* Estilos base para todos los tamaños de pantalla */
+
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +60,7 @@ header {
     color: #555;
 }
 
-/* Estilos para la página de cada servicio */
+
 .servicio-page {
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@ header {
     margin-bottom: 10px;
 }
 
-/* Estilo para el menu2 */
+/* sstilo para el menu2 */
 .menu2 {
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@ header {
     color: #555;
 }
 
-/* Estilos para la página de cada servicio */
+
 .servicio-page {
     display: flex;
     flex-direction: column;
@@ -107,11 +107,11 @@ header {
     text-align: center;
 }
 
-/* Estilo para las imágenes */
+/* estilo para las imágenes */
 .imagen-container {
     position: relative;
     display: flex;
-    justify-content: center; /* Centrar imágenes */
+    justify-content: center; 
     width: 100%;
     border-radius: 10px;
 }
@@ -138,9 +138,8 @@ h1 {
     justify-content: space-between;
 }
 
-/* Ajustar los servicios para dispositivos móviles */
 .servicio {
-    flex-basis: calc(50% - 20px); /* 2 columnas en dispositivos móviles */
+    flex-basis: calc(50% - 20px); 
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -192,19 +191,19 @@ a {
     margin: 0 15px;
 }
 
-/* Media query para dispositivos móviles */
+
 @media (max-width: 768px) {
     .contenido {
         padding: 10px;
     }
 
-    /* Ajustar el tamaño de fuente para dispositivos móviles */
+   
     body {
         font-size: 16px;
     }
 
     .servicio {
-        flex-basis: calc(100% - 20px); /* Una columna completa en dispositivos móviles */
+        flex-basis: calc(100% - 20px);
     }
 
     .menu2 {
@@ -214,4 +213,35 @@ a {
     .servicio-link {
         margin: 0 10px;
     }
+}
+
+.descripcion {
+    display: flex;
+    border: 1px solid #ccc; 
+    margin: 20px;
+    padding: 20px;
+}
+
+.imagen-folleto {
+    flex: 1;
+    max-width: 40%;
+}
+
+.imagen-folleto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.descripcion-texto {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.descripcion-texto h2 {
+    font-size: 24px; 
+}
+
+.descripcion-texto p {
+    margin: 0 0 10px; 
+    font-size: 16px; 
 }
