@@ -1,4 +1,4 @@
-
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -77,7 +77,7 @@ header {
 }
 
 /* sstilo para el menu2 */
-.menu2 {
+/*.menu2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -108,7 +108,7 @@ header {
 }
 
 /* estilo para las imágenes */
-.imagen-container {
+/* .imagen-container {
     position: relative;
     display: flex;
     justify-content: center; 
@@ -178,7 +178,7 @@ a {
 }
 
 /* Estilos del menú del pie de página */
-.footer-menu {
+/*.footer-menu {
     background-color: aliceblue;
     color: #060606;
     text-align: center;
@@ -244,4 +244,4 @@ a {
 .descripcion-texto p {
     margin: 0 0 10px; 
     font-size: 16px; 
-}
+} */ 

@@ -3,59 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+    <title>Restaurante</title>
     <link rel="icon" href="/Atividad/img/logo verde.png">
-    <link rel="stylesheet" href="/Hotel/css/estilo.css">
+    <link rel="stylesheet" href="/Hotel/css/estiloServicios/Restaurante.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".servicio-link").on("click", function (event) {
-                event.preventDefault();
-                const targetPage = $(this).attr("href");
-                
-                $("body").fadeOut(300, function () {
-                    window.location.href = targetPage;
-                });
-            });
-        });
-    </script>
+
 </head>
 <body>
     <header>
-        <h1 class="titulo">Restaurante</h1>
+        <h1>Restaurante</h1>
     </header>
-    <nav class="menu2">
-        <a class="servicio-link" href="piscina.html">piscina</a>
-        <a class="servicio-link" href="bar.html">Bar</a>
-        <a class="servicio-link" href="spa.html">Spa</a>
-        <a class="servicio-link" href="room.html">Romm Service</a>
-
-    </nav>
-    <section class="descripcion">
-        <div class="descripcion-texto">
-            <h3>Tipos de Restaurante</h3>        
-            <p class="servicio-description">Cuando hablamos de los diferentes tipos de servicios en restaurantes, nos referimos a las diferentes formas de presentar y servir la comida al cliente. Esta clasificación es esencial para determinar el protocolo de interacción y entrega de alimentos y bebidas a los comensales.</p>
+    <div class="menu">
+        <ul>   
+            <li class="lis"><a href="/Hotel/paginas/servicios/bar.html">Bar</a></li>
+            <li class="lis"><a href="/Hotel/paginas/servicios/piscina.html">Piscina</a></li>
+            <li class="lis"><a href="/Hotel/paginas/servicios/room.html">Room service</a></li>
+            <li class="lis"><a href="/Hotel/paginas/servicios/spa.html">Spa</a></li>
+            <li class="lis"><a href="/Hotel/sistema.html#intro">Inicio</a></li>
             
-            <h3>Nuestros Restaurantes</h3>
-            <p>A continuación te mostraremos los tipos de servicios en restaurantes y hoteles más comunes que puedes encontrar, una clasificación esencial para entender cómo se brinda la atención al cliente en diversos establecimientos culinarios. Estos tipos de servicios son:</p>
-            
-            <h4>Servicio a la Inglesa:</h4>
-            <p>En este tipo de servicio, los camareros sirven la comida directamente en el plato del comensal desde una bandeja o fuente que llevan en su mano izquierda. El servicio se realiza por la izquierda del comensal, y se considera formal y elegante.</p>
-
-            <h4>Servicio a la Francesa:</h4>
-            <p>Este servicio es el más tradicional y formal. La comida se presenta en bandejas o platos al comensal para que él mismo se sirva. Los platos se presentan por la derecha y se retiran por la izquierda.</p>
-
-            <h4>Servicio a la Rusa o de Gueridón:</h4>
-            <p>Este tipo de servicio se caracteriza por el uso de un carrito o gueridón donde se realizan los últimos preparativos del plato frente al comensal (por ejemplo, flambeado, fileteado, etc.). Es un servicio muy personalizado y espectacular, aunque requiere de habilidades específicas por parte del camarero.</p>
-
-            <h4>Servicio a la Americana o de Emplatado:</h4>
-            <p>Es el servicio más común en la actualidad. Los alimentos ya vienen servidos y presentados en el plato desde la cocina, y el camarero simplemente los lleva a la mesa. Es un servicio rápido y eficiente, pero con menos formalidad y personalización que los anteriores.</p>
+        </ul>
+    </div>
+    <center>
+    <h2>Galeria</h2>
+    </center>
+        <div class="collage">
+            <img src="/Hotel/img/res1.jpg" alt="Imagen 1">
+            <img src="/Hotel/img/res2.jpg" alt="Imagen 2">
+            <img src="/Hotel/img/res3.jpg" alt="Imagen 3">
+            <img src="/Hotel/img/res4.jpg" alt="Imagen 4">
+            <img src="/Hotel/img/res5.jpg" alt="Imagen 5">
+        </div>
+    <div class="contenedor-tarjetas">
+        <div class="tarjeta">
+            <div class="descripcion-texto">
+                <center>
+                <h2>TIPOS DE RESTAURANTES</h2>
+                </center>
+                <p>Cuando hablamos de los diferentes tipos de servicios en restaurantes, nos referimos a las
+                    diferentes formas de presentar y servir la comida al cliente. Esta clasificación es esencial
+                    para determinar el protocolo de interacción y entrega de alimentos y bebidas a los
+                    comensales.</p>
+                <center>
+                    <h2>NUESTROS RESTAURANTES</h2>
+                    <p>A continuación te mostraremos los tipos de servicios en restaurantes y hoteles más comunes que
+                        puedes encontrar, una clasificación esencial para entender cómo se brinda la atención al cliente
+                        en diversos establecimientos culinarios. Estos tipos de servicios son:</p>
+                </center>
+            </div>
+        </div>
+        
+        <div class="tarjeta">
+            <div class="imagen-folleto">
+                <img src="/Hotel/img/Servicio a la inglesa.jpg" alt="Imagen de la sauna">
+            </div>
+            <div class="descripcion-texto">
+                <p><strong>Servicio a la inglesa:</strong> En este tipo de servicio, los camareros sirven la comida directamente en el
+                    plato del comensal desde una bandeja o fuente que llevan en su mano izquierda. El servicio se
+                    realiza por la izquierda del comensal, y se considera formal y elegante.</p>
+            </div>
         </div>
 
-        <div class="descripcion-imagen">
-            <img class="imagen" src="/Hotel/img/restaurant-449952_1280.jpg" alt="Piscina">
+        <div class="tarjeta">
+            <div class="imagen-folleto">
+                <img src="/Hotel/img/Servicio a la francesa.jpg" alt="Imagen de masajes">
+            </div>
+            <div class="descripcion-texto">
+                <p><strong>Servicio a la francesa:</strong> Este servicio es el más tradicional y formal. La comida se presenta en
+                    bandejas o platos al comensal para que él mismo se sirva. Los platos se presentan por la derecha y
+                    se retiran por la izquierda.</p>
+            </div>
         </div>
 
-    </section>
+        <div class="tarjeta">
+            <div class="imagen-folleto">
+                <img src="/Hotel/img/Servicio a la rusa o de gueridón.jpg" alt="Imagen de aromaterapia">
+            </div>
+            <div class="descripcion-texto">
+                <p><strong>Servicio a la rusa o de gueridón:</strong> Este tipo de servicio se caracteriza por el uso de un carrito o
+                    gueridón donde se realizan los últimos preparativos del plato frente al comensal (por ejemplo,
+                    flambeado, fileteado, etc.). Es un servicio muy personalizado y espectacular, aunque requiere de
+                    habilidades específicas por parte del camarero.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="imagen-folleto">
+                <img src="/Hotel/img/Servicio a la americana o de emplatado.jpg" alt="Imagen de aromaterapia">
+            </div>
+            <div class="descripcion-texto">
+                <p><strong>Servicio a la americana o de emplatado:</strong> Es el servicio más común en la actualidad. Los alimentos
+                    ya vienen servidos y presentados en el plato desde la cocina, y el camarero simplemente los lleva a
+                    la mesa. Es un servicio rápido y eficiente, pero con menos formalidad y personalización que los
+                    anteriores.</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+
+    </footer>
 </body>
 </html>

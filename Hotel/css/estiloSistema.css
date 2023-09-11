@@ -58,7 +58,7 @@ header span{
     justify-content: center;
     align-items: center;
 }
-#intro .contenido h1{
+#intro .contenido1 h1{
     font-size: 4rem;
     text-align: center;
     color: azure;
@@ -85,7 +85,7 @@ header span{
     margin: 20px auto; 
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    margin-top: -30px;
+    margin-top: -60px;
 }
 .formulario h2 {
     color: #ffffff;
@@ -131,7 +131,7 @@ header span{
     color: #0b3b65;
     
 } 
-#servicios .contenido {
+#servicios .contenido1 {
     max-width: 90%;
     margin: auto;
     display: flex;
@@ -139,11 +139,29 @@ header span{
     
 
 }
+
 .contenido a {
     text-decoration: none; 
-    color: #ffffff;
+    color: #1f1919;
 }
+.contenido {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    height: 80%;
+    padding: 20px ;
+    max-width: 400px; 
+    margin-top: -10px;
 
+}
+p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666;
+    text-align: justify;
+}
 #servicios .servicio1 {
     background-image: url(/Hotel/img/pexels-pixabay-261105.jpg);
 }
@@ -276,5 +294,8 @@ header span{
 #contactenos-form .input-field:valid {
     border-color: rgb(255, 255, 255);
 }
+
+
+
 
 

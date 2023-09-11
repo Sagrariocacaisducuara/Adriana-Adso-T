@@ -3,49 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+    <title>Room Service</title>
     <link rel="icon" href="/Atividad/img/logo verde.png">
-    <link rel="stylesheet" href="/Hotel/css/estilo.css">
+    <link rel="stylesheet" href="/Hotel/css/estiloServicios/room.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".servicio-link").on("click", function (event) {
-                event.preventDefault();
-                const targetPage = $(this).attr("href");
-                
-                $("body").fadeOut(300, function () {
-                    window.location.href = targetPage;
-                });
-            });
-        });
-    </script>
+
 </head>
 <body>
     <header>
-        <h1 class="titulo">Romm Service</h1>
+        <h1>Room Service</h1>
     </header>
-    <nav class="menu2">
-        <a class="servicio-link" href="piscina.html">piscina</a>
-        <a class="servicio-link" href="bar.html">Bar</a>
-        <a class="servicio-link" href="spa.html">Spa</a>
-        <a class="servicio-link" href="restaurante.html">Restaurante</a>
-
-    </nav>
-    <section class="descripcion">
-        <div class="descripcion-texto">
-            <h2>Servicios a la habitacion</h2><br>    
-            <p class="servicio-description">Sin duda, el servicio de habitaciones de los hoteles es una vara de medir muy importante a la hora de elegir el hotel perfecto. Muchas personas se centran en algo especial y que diferencie el hotel de los demás, como una grande y elegante spa o un servicio de animación para niños que ayude los padres a descansar tras un año entero haciendo malabares con la escuela, los deportes y las rabietas.</p><br>
-            
-            <h3>¿Cómo funciona el servicio de habitaciones en nuestro hotel?</h3><br>
-            <p>El funcionamiento del servicio de habitaciones es relativamente sencillo. Basta con que el cliente se comunique telefónicamente con la recepción del hotel para que, en cuestión de minutos, esté el personal idóneo atendiendo la solicitud del huésped en la puerta de su habitación. Para servicios premium que necesitan una mayor organización, el hotel puede reservarse la posibilidad de pedir la reserva de tal servicio de habitación con X días de adelanto. En general, aunque el teléfono sea el medio de comunicación más común, algunos hoteles han apostado por la tecnología digital. Esto quiere decir que, muchas de estas peticiones se pueden hacer directamente desde una aplicación propia del hotel. Todo esto, obviamente, no excluye el clásico intemporal de la petición directamente en la recepción.</p>
-            
-            
+    <div class="menu">
+        <ul>   
+            <li class="lis"><a href="/Hotel/paginas/servicios/bar.html">Bar</a></li>
+            <li class="lis"><a href="/Hotel/paginas/servicios/restaurante.html">restaurante</a></li>
+            <li class="lis"><a href="/Hotel/paginas/servicios/piscina.html">Piscina</a></li>
+            <li class="lis"><a href="/Hotel/paginas/servicios/spa.html">Spa</a></li>
+            <li class="lis"><a href="/Hotel/sistema.html#intro">Inicio</a></li>
+        </ul>
+    </div>
+    <center>
+    <h2>Galeria</h2>
+    </center>
+        <div class="collage">
+            <img src="/Hotel/img/1.jpg" alt="Imagen 1">
+            <img src="/Hotel/img/2.jpg" alt="Imagen 2">
+            <img src="/Hotel/img/3.jpg" alt="Imagen 3">
+            <img src="/Hotel/img/4.jpg" alt="Imagen 4">
+            <img src="/Hotel/img/5.jpg" alt="Imagen 5">
+        </div>
+    <div class="contenedor-tarjetas">
+        <div class="tarjeta">
+            <div class="descripcion-texto">
+                <center>
+                <h2>Servicios a la habitacion</h2>
+                </center>
+                    <p>Sin duda, el servicio de habitaciones de los hoteles es una vara de medir muy importante a la hora
+                        de elegir el hotel perfecto. Muchas personas se centran en algo especial y que diferencie el hotel
+                        de los demás, como una grande y elegante spa o un servicio de animación para niños que ayude
+                        los padres a descansar tras un año entero haciendo malabares con la escuela, los deportes y las
+                        rabietas.</p>
+                    <center>
+                    <h2>¿Cómo funciona el servicio de habitaciones en nuestro hotel?</h2>
+                    </center>   
+            </div>
+        </div>
+        
+        <div class="tarjeta">
+            <div class="imagen-folleto">
+                <img src="/Hotel/img/room-service.webp" alt="Imagen de la sauna">
+            </div>
+            <div class="descripcion-texto">
+                <p>El funcionamiento del servicio de habitaciones es relativamente sencillo. Basta con que el cliente
+                    se comunique telefónicamente con la recepción del hotel para que, en cuestión de minutos, esté
+                    el personal idóneo atendiendo la solicitud del huésped en la puerta de su habitación. Para
+                    servicios premium que necesitan una mayor organización, el hotel puede reservarse la posibilidad
+                    de pedir la reserva de tal servicio de habitación con X días de adelanto. </p>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="imagen-folleto">
+                <img src="/Hotel/img/room.jpg" alt="Imagen de la sauna">
+            </div>
+            <div class="descripcion-texto">
+                <p>En general, aunque el
+                    teléfono sea el medio de comunicación más común, algunos hoteles han apostado por la
+                    tecnología digital. Esto quiere decir que, muchas de estas peticiones se pueden hacer
+                    directamente desde una aplicación propia del hotel. Todo esto, obviamente, no excluye el clásico
+                    intemporal de la petición directamente en la recepción.</p>
+            </div>
         </div>
 
-        <div class="descripcion-imagen">
-            <img class="imagen" src="/Hotel/img/pexels-pixabay-261105.jpg" alt="Piscina">
-        </div>
 
-    </section>
+    </div>
+    <footer>
+
+    </footer>
 </body>
 </html>
