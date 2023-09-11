@@ -1,13 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient( to right, #ffffff, rgb(255, 255, 255), #ffffff);
+
+    background-image:url(/Hotel/img/fondopiscina.jpg);
+    background-size: cover;
     margin: 0;
     padding: 0;
     text-align: justify;
 }
 
 header{
-background-image: linear-gradient( to right, #0b3b65, rgb(255, 255, 255), #0b3b65);
+background-image: linear-gradient( to right, #b2c9dd, rgb(255, 255, 255),  #b2c9dd);
 text-align: center;
 max-width: 100%;
 padding: 2% 0;
@@ -64,7 +66,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    background-image: linear-gradient( to right, #ffffff, rgb(255, 255, 255), #ffffff);
 }
 
 .collage img {
@@ -120,7 +121,9 @@ ul li a:hover{
 opacity: 1;
 }
 footer{
-background-color: #79767c;
+    text-align: center;
+    color: #fff;
+background-color: #000000;
 padding: 50px;
 }
 @media (max-width: 768px) {
