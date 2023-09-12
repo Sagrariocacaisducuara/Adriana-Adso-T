@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Hotel/css/estiloReserva/reserva.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Reserva</title>
 </head>
 <body>
-    
+    <section id="registro" class="bloque">
+        <div class="formulario">
+            <h1>Formulario de Reserva Hotelera</h1>
+            <form action="" method="">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+        
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+        
+                <label for="fecha_llegada">Fecha de llegada:</label>
+                <input type="date" id="fecha_llegada" name="fecha_llegada" required><br><br>
+        
+                <label for="fecha_salida">Fecha de salida:</label>
+                <input type="date" id="fecha_salida" name="fecha_salida" required><br><br>
+        
+                <label for="tipo_habitacion">Tipo de habitación:</label>
+                <select id="tipo_habitacion" name="tipo_habitacion" required>
+                    <option value="individual">Individual</option>
+                    <option value="doble">Doble</option>
+                    <option value="suite">Suite</option>
+                </select><br><br>
+        
+                <label for="comentarios">Comentarios adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        
+                <input type="submit" value="Enviar reserva">
+            </form>
+        </div>
+    </section>
+    <script>
+        Swal.fire({
+        title: '¿Estás seguro?',
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+        }
+        })
+    </script>
 </body>
 </html>
